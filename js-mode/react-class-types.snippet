@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# contributor: HairyRabbit <yfhj1990@hotmail.com>
+# name: react es6 class component with prop and state types
+# key: rcct
+# --
+type Props = {
+
+}
+
+type State = {
+
+}
+
+class ${1:ClassName} extends React.Component<Props, State> {
+  state = {
+
+  };
+
+  render() {
+    const { $0 } = this.props
+
+    return (
+      ${2:<div></div>}
+    )
+  }
+}
