@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: HairyRabbit <yfhj1990@hotmail.com>
+# name: jest require
+# key: req
+# --
+const $1 = require('../src/${1:`(file-name-nondirectory (file-name-sans-extension (file-name-sans-extension (buffer-file-name))))`}').default
+$0
