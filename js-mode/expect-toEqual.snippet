@@ -1,8 +1,6 @@
 # -*- mode: snippet -*-
 # contributor: HairyRabbit <yfhj1990@hotmail.com>
-# name: function
-# key: f
+# name: expect-toEqual
+# key: exte
 # --
-function ${1:NAME}(${2:PARAMS}) {
-  $0
-}
+expect(${1:expected}).toEqual(${2:received})
