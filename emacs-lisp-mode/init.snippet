@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# contributor: HairyRabbit <yfhj1990@hotmail.com>
+# name: init
+# key: i
+# --
+;;; ${1:`(buffer-file-name)`} --- ${2:$1}  -*- lexical-binding: t -*-
+
+;; Copyright (C) 2017-2018 by ${3:`(getenv "USER_NAME")`}
+
+;; Author: $3
+;; URL: ${4:`(concat "https://github.com/" (getenv "GITHUB_USER") "/" "REPO")`}
+;; Version: 0.0.1
+
+;;; Code:
+
+$0
+(provide '${5:${1:$(file-name-nondirectory (file-name-sans-extension yas-text))}})
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+;;; $1 ends here
